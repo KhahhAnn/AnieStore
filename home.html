@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anie Store</title>
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="#" class="logo">
+                <img src="assets/logoAnie.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="#">Trang chủ</a>
+                </div>
+                <div class="item dropdown">
+                    <a href="product.html">Sản phẩm</a>
+                    <ul class="drop">
+                        <a href="vay.html"><li>&nbsp&nbsp&nbspVáy</li> </a>
+                        <a href="ao.html"><li>&nbsp&nbsp&nbspSweater</li></a>
+                        <a href="quan.html"><li>&nbsp&nbsp&nbspQuần</li> </a>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a href="/care.html">Sự kiện</a>
+                </div>
+                <div class="item">
+                    <a href="/contactus.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="#comment">Đánh giá</a>
+                </div>
+            </div>
+            <div id="actions">
+                <a href = "sign.html" class="item" class = "f-login">
+                    <i class="icofont-user" onclick="open()"></i>
+                    <script class="item" class = "f-login">
+                        function open() { window.open('signin.html'); }
+                    </script>
+                </a>
+                <div class="item shopping">
+                    <div id="">
+                        <i class="icofont-cart cart"></i>
+                    </div>
+                    <span class="hart">0</span>
+                    <div id="gioHang" class="L_cart hiden">
+                        <h1>Giỏ hàng</h1>
+                        <div class="ListCart">
+                            <div class="inner" style="display: flex; justify-content: space-between; font-size: 14px; margin:10px 40px; ">
+                                <p>Sản phẩm</p>
+                                <p>Giá</p>
+                                <p>Số lượng</p>
+                                <p>Chọn</p>
+                            </div>
+                            <!-- <div class="col" style="display: flex; justify-content: space-between;font-size: 14px; text-align: center; width: 500px; margin-bottom: 20px;">
+                                <img src="./assets/ao1.jpg" alt="" style="width: 20%;height: 90px; border-radius: 50%; margin-left: 20px; ">
+                                <p class="name" style="display: none;">Áo Nỉ Dài Tay Unisex Cổ Tròn Thu Đông</p>
+                                <p style="margin-top: 20px;">320.000 <sup>đ</sup></p>
+                                <input type="number" value="1" min="0" style="outline: none; width: 40px; height: 20px; text-align: center; margin-right: 40px; margin-top: 20px;">
+                                <p style="margin-right: 45px; margin-top: 20px; cursor: pointer;">Xóa</p>
+                            </div> -->
+                        </div>
+                        <div class="CheckOut">
+                            <div class="total">Tổng tiền:&nbsp <b class="money">0</b>  <sup>đ</sup> </div>
+                            <div class="closeShopping">Close</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <span>ANIESTRORE</span>
+                    <br>
+                    <span>THỜI TRANG</span>
+                </h2>
+                <p>Chuyên cung cấp các sản phẩm đảm bảo chất lượng đến người dùng, 
+                    phục vụ người dùng 1 cách
+                    hoàn hảo nhất</p>
+                <a href="/product.html"><button>MUA NGAY</button></a>
+            </div>
+            <div class="box-right">
+                <img  src="assets/sp1.png" alt="">
+                <img  src="assets/sp2.png" alt="">
+                <img  src="assets/sp3.png" alt="">
+            </div>
+            <div class="to-bottom">
+                <a href="#wp-products">
+                    <i class="icofont-circled-down"></i>
+                </a>
+            </div>
+        </div>
+        <div id="wp-products">
+            <p style="margin-bottom: 20px;margin-top: -40px; font-size: 30px; color: rgb(155,151,151);">Danh mục sản phẩm </p>
+            <hr style="margin-bottom: 20px;">
+            <div class="list-products">
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao1.jpg" alt="">
+                    <div class="hiden">
+                        <span>300.000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Nỉ Dài Tay Unisex Cổ Tròn Thu Đông</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="/product_details/product1.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="/product_details/assets/quan1" alt="">
+                    <div class="hiden">
+                        <span>400.000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Quần Dài Ống Suông Vải Len Tăm</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product13.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="/product_details/assets/vay1" alt="">
+
+                    <div class="hiden">
+                        <span>200.000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Váy Cổ Tim Khoét Ngực Hoa Nhí</p>
+
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product7.html">
+
+                        <button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="/product_details/assets/quan5" alt="">
+
+                    <div class="hiden">
+                        <span>500.000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Quần Bò Ngắn Gấu Màu Xanh Full Size</p>
+
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product14.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="/product_details/assets/vay5" alt="">
+
+                    <div class="hiden">
+                        <span>600.000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Váy Hoa Nhí Cổ Vuông Có Nơ Ngực</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product8.html"><button>Xem thêm</button></a>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao21" alt="">
+                    <div class="hiden">
+                        <span>700.000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Thun Unisex Dài Tay Thu Đông</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product6.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+        <div id="saleoff">
+            <div class="box-left">
+                <h1>
+                    <span>GIẢM GIÁ LÊN ĐẾN</span>
+                    <span>45%</span>
+                </h1>
+            </div>
+            <div class="box-right"></div>
+        </div>
+        <div id="comment">
+            <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
+            <div id="comment-body">
+                <div class="prev">
+                    <a href="#">
+                        <i class="icofont-arrow-up"></i>    
+                    </a>
+                </div>
+                <ul id="list-comment">
+                    <li class="item">
+                        <div class="avatar">
+                            <img src="assets/ava1.png" alt="">
+                        </div>
+                        <div class="stars">
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                        </div>
+                        <div class="name">Bui Khanh An - 21810310045</div>
+
+                        <div class="text">
+                            <p>Lần đầu tiên mua hàng online nên là hơi lo lo, cứ sợ bị lừa. Nhưng đỡ cái là shop này hỗ trợ cho mình rất tận tình luôn nên cũng yên tâm được phần nào. Sản phẩm ở đây theo mình thấy thì vô cùng là chất lượng và ổn áp với giá tiền như vậy.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="avatar">
+                            <img src="assets/ava2.jpg" alt="">
+
+                        </div>
+                        <div class="stars">
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                        </div>
+                        <div class="name">Nguyen Thi Thu Huyen - 21810310070</div>
+
+                        <div class="text">
+                            <p>Mình là người khá kỹ tính trong việc mua hàng, mà shop này lại làm mình vui vẻ khi mua hàng thì là một thành công lớn của shop này rồi đấy.</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="avatar">
+                            <img src="assets/ava3.jpg" alt="">
+
+                        </div>
+                        <div class="stars">
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="assets/star.png" alt="">
+                            </span>
+                        </div>
+                        <div class="name">Nguyen Minh Duc - 21810310015</div>
+
+                        <div class="text">
+                            <p>Sản phẩm trên cả tuyệt vời luôn ạ, mình mua đến nay đã là 10 sản phẩm ở shop này để cho họ hàng mình dùng rồi nó vô cùng bền lắm luôn.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="next">
+                    <a href="#">
+                        <i class="icofont-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="assets/logoAnie.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>Thông tin</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <span><i class="icofont-location-pin"></i>Phường Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</span>
+                    </div>
+                    <div class="item">
+                        <span><i class="icofont-phone"></i>0963867931</span>
+                    </div>
+                    <div class="item social">
+                            <a href="https://shopee.vn/"><i class="icofont-shopify"></i></a>
+                            <a href="https://www.snapchat.com/vi-VN"><i class="icofont-snapchat"></i></a>
+                            <a href="https://twitter.com/?lang=vi"><i class="icofont-twitter"></i></a>
+                            <a href="https://www.facebook.com/"><i class="icofont-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="icofont-instagram"></i></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sản phẩm</title>
+  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="/icofont/icofont.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="product.css">
+
+</head>
+<body>
+    <div class="container">
+      <div id="header">
+        <a href="/home.html" class="logo">
+            <img src="/assets/logoAnie.png" alt="">
+        </a>
+        <div id="menu">
+            <div class="item">
+                <a href="/home.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="/product.html">Sản phẩm</a>
+            </div>
+            <div class="item">
+                <a href="/care.html">Dịch vụ</a>
+            </div>
+            <div class="item">
+                <a href="/contactus.html">Liên hệ</a>
+            </div>
+            <div class="item">
+              <a href="/review.html">Đánh giá</a>
+          </div>
+        </div>
+        <div id="actions">
+          <a href = "/sign.html" class="item" class = "f-login">
+              <i class="icofont-user" onclick="open()"></i>
+              <script class="item" class = "f-login">
+                  function open() { window.open('signin.html'); }
+              </script>
+          </a>
+          <div class="item">
+              <i class="icofont-cart"></i>
+          </div>
+      </div>
+    </div>
+    <div class="grid product">
+      <div class="column-xs-12 column-md-7">
+        <div class="product-gallery">
+          <div class="product-image">
+            <img class="active" src="assets/vay17" style="height: 600px;">
+          </div>
+          <ul class="image-list">
+            <li class="image-item"><img src="assets/vay18.webp"></li>
+            <li class="image-item"><img src="assets/vay19.webp"></li>
+            <li class="image-item"><img src="assets/vay20.webp"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column-xs-12 column-md-5">
+        <h1 style="font-size: 40px; margin-top: 0;">Đầm Maxi Hai Dây Họa Tiết Hoa Nhí</h1>
+        <h2 style="color: brown;">209.000 VNĐ</h2>
+        <div class="description">
+            <p>MÔ TẢ SẢN PHẨM
+            <br> - Tên sản phẩm : Đầm Maxi
+            <br>- Chất Liệu: chất Lụa
+            <br>- Màu Sắc: Trắng
+            <br>- Size: M, L, XL</p>
+            <p>BẢNG KÍCH THƯỚC:
+            <br>- Size M : 40-59 kg, cao 1m50 – 1m60
+            <br>- Size L : 60 - 70 kg, cao 1m61 – 1m70
+            <br>- Size XL : 71 - 85 kg, cao 1m71 – 1m83</p>
+            <p>CHÍNH SÁCH MUA HÀNG TẠI ANIESTORE:
+            <br> Là khách hàng của SHOP, bạn sẽ được:
+            <br>Được áp mã FREESHIP EXTRA  miễn phí vận chuyển
+            <br>Cam kết chất lượng và mẫu mã sản phẩm giống với hình ảnh.
+            <br>Hoàn tiền nếu sản phẩm không giống với mô tả.
+            <br>Cam kết được đổi trả hàng theo quy định của shopee.</p>
+        </div>
+        <button class="btn_mua">Mua ngay</button>
+      </div>
+    </div>
+  </body>
+  <script  src="product.js"></script>
+  <script src="/script.js"></script>
+</html>

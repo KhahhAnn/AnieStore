@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anie Store</title>
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head> 
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="home.html" class="logo">
+                <img src="assets/logoAnie.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="home.html">Trang chủ</a>
+                </div>
+                <div class="item dropdown">
+                    <a href="product.html">Sản phẩm</a>
+                    <ul class="drop">
+                        <a href="vay.html"><li>&nbsp&nbsp&nbspVáy</li> </a>
+                        <a href="ao.html"><li>&nbsp&nbsp&nbspSweater</li></a>
+                        <a href="quan.html"><li>&nbsp&nbsp&nbspQuần</li> </a>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a href="/care.html">Dịch Vụ</a>
+                </div>
+                <div class="item">
+                    <a href="/contactus.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="/review.html">Đánh giá</a>
+                </div>
+            </div>
+            <div id="actions">
+                <a href = "sign.html" class="item" class = "f-login">
+                    <i class="icofont-user" onclick="open()"></i>
+                    <script class="item" class = "f-login">
+                        function open() { window.open('signin.html'); }
+                    </script>
+                </a>
+                <div class="item shopping">
+                    <div id="">
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <span class="hart">0</span>
+                    <div id="gioHang" class="L_cart hiden">
+                        <h1>Giỏ hàng</h1>
+                        <div class="ListCart">
+                            <div class="inner" style="display: flex; justify-content: space-between; font-size: 14px; margin:10px 40px; ">
+                                <p>Sản phẩm</p>
+                                <p>Giá</p>
+                                <p>Số lượng</p>
+                                <p>Chọn</p>
+                            </div>
+                            <!-- <div class="col" style="display: flex; justify-content: space-between;font-size: 14px; text-align: center; width: 500px; margin-bottom: 20px;"> -->
+                                <!-- <img src="./assets/ao1.jpg" alt="" style="width: 20%;height: 90px; border-radius: 50%; margin-left: 20px; ">
+                                <p style="margin-top: 20px;">320.000 <sup>đ</sup></p>
+                                <input type="number" value="1" min="0" style="outline: none; width: 40px; height: 20px; text-align: center; margin-right: 40px; margin-top: 20px;">
+                                <p style="margin-right: 45px; margin-top: 20px; cursor: pointer;">Xóa</p> -->
+                            <!-- </div> -->
+                        </div>
+                        <div class="CheckOut">
+                            <div class="total">Tổng tiền:&nbsp <b class="money">0</b>  <sup>đ</sup> </div>
+                            <div class="closeShopping">Close</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wp-products">
+            <p style="margin-bottom: 20px; font-size: 30px; color: rgb(155,151,151);">Danh mục sản phẩm </p>
+            <hr style="margin-bottom: 20px;">
+            <div class="list-products">
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao1.jpg" alt="">
+                    <div class="hiden">
+                        <span>200000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Nỉ Dài Tay Unisex Cổ Tròn Thu Đông</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="product_details/product1.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao5" alt="">
+                    <div class="hiden">
+                        <span>200000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Polo Nỉ Unisex Dài Tay Thu Đông</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product2.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao9" alt="">
+                    <div class="hiden">
+                        <span>200000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Nỉ Unisex Dài Tay Khóa Kéo In Logo</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product3.html">
+                        <button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao13" alt="">
+                    <div class="hiden">
+                        <span>200000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Thun Cao Cổ Unisex Dài Tay Màu Xanh</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product4.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao19" alt="">
+                    <div class="hiden">
+                        <span>200000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Thun Unisex Cộc Tay In Chữ Ngực</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product5.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hov">
+                        <i class="icofont-heart-alt heart"></i>
+                        <i class="icofont-cart cart item-cart"></i>
+                    </div>
+                    <img src="./assets/ao21" alt="">
+                    <div class="hiden">
+                        <span>200000</span>
+                    </div>
+                    <div class="intro">
+                        <p>Áo Thun Unisex Dài Tay Thu Đông</p>
+                    </div>
+                    <div class="btn-product">
+                        <a href="./product_details/product6.html"><button>Xem thêm</button></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="/cart.js"></script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anie Store</title>
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="care.css">
+</head> 
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="home.html" class="logo">
+                <img src="assets/logoAnie.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="home.html">Trang chủ</a>
+                </div>
+                <div class="item dropdown">
+                    <a href="product.html">Sản phẩm</a>
+                    <ul class="drop">
+                        <li><a href="vay.html">&nbsp&nbsp&nbspVáy</a></li>
+                        <li><a href="ao.html">&nbsp&nbsp&nbspSweater</a></li>
+                        <li><a href="quan.html">&nbsp&nbsp&nbspQuần</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a href="/care.html">Dịch Vụ</a>
+                </div>
+                <div class="item">
+                    <a href="/contactus.html">Sự kiện</a>
+                </div>
+                <div class="item">
+                    <a href="review.html">Đánh giá</a>
+                </div>
+            </div>
+            <div id="actions">
+                <a href = "sign.html" class="item" class = "f-login">
+                    <i class="icofont-user" onclick="open()"></i>
+                    <script class="item" class = "f-login">
+                        function open() { window.open('signin.html'); }
+                    </script>
+                </a>
+                <div class="item shopping">
+                    <div id="">
+                        <i class="icofont-cart cart"></i>
+                    </div>
+                    <span>0</span>
+                    <div id="gioHang" class="L_cart hiden">
+                        <h1>Giỏ hàng</h1>
+                        <ul class="ListCart"></ul>
+                        <div class="CheckOut">
+                            <div class="total">0</div>
+                            <div class="closeShopping">Close</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="saleoff">
+            <div class="box-left">
+                <h1>
+                    <span>GIẢM GIÁ LÊN ĐẾN</span>
+                    <span>45%</span>
+                </h1>
+            </div>
+            <div class="box-right"></div>
+        </div>
+
+        <div class="btn_sale">
+            <a href="product.html"><button>MUA NGAY</button></a>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
