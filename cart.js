@@ -44,6 +44,7 @@ function addCart(productImg, productPrice, productName) {
       if(productT[i].innerHTML == productName) {
          alertE = "Sản phẩm đã có trong giỏ hàng!"
          alert('San pham ban da co')
+         return 0;
       }
    }
    deleteCart()
@@ -78,10 +79,23 @@ function cartTotal() {
    console.log(cartTotalA)
    cartTotalA.innerHTML = totalB.toLocaleString('de-DE')
    // console.log(cartTotalA)
+   inputChange()
+   deleteCart()
 }
 function hartInner() {
-   const cartItem = document.querySelectorAll('.col')
+   // const cartItem = document.querySelectorAll('.col')
    var hart = document.querySelector('.hart')
+   const cartItem = document.querySelectorAll('.col')
+   for(var i = 0; i < cartItem.length; i++) {
+      var productT = document.querySelectorAll('.delete')
+      // console.log(productT)
+      productT[i].addEventListener("click", function(event) {
+         var cartDelete = event.target
+         var cartItemd = cartDelete.parentElement
+         cartItemd.remove()
+         // console.log(cartItemd)
+      })
+   }
    hart.innerHTML = cartItem.length
 }
 // var trcontent = '<div class="col" style="display: flex; justify-content: space-between;font-size: 14px; text-align: center; width: 500px; margin-bottom: 20px;"><img src="'+productImg+'" alt="" style="width: 20%;height: 90px; border-radius: 50%; margin-left: 20px; "><p class="name" style="display: none;">'+productName+'</p><p style="margin-top: 20px;">'+productPrice+'<sup>đ</sup></p><input type="number" value="1" min="0" style="outline: none; width: 40px; height: 20px; text-align: center; margin-right: 40px; margin-top: 20px;"><p class = "delete" style="margin-right: 45px; margin-top: 20px; cursor: pointer;">Xóa</p></div>'
@@ -90,9 +104,11 @@ function deleteCart() {
    const cartItem = document.querySelectorAll('.col')
    for(var i = 0; i < cartItem.length; i++) {
       var productT = document.querySelectorAll('.delete')
+      // console.log(productT)
       productT[i].addEventListener("click", function(event) {
          var cartDelete = event.target
          var cartItemd = cartDelete.parentElement
+         console.log(cartItemd)
          cartItemd.remove()
          // console.log(cartItemd)
       })
@@ -102,4 +118,14 @@ function deleteHart() {
    const productT = document.querySelectorAll('.delete')
    var hart = document.querySelector('.hart')
    hart.innerHTML -= productT
+}
+function inputChange(params) {
+   const cartItem = document.querySelectorAll('.col')
+   for(var i = 0; i < cartItem.length; i++) {
+      var valueChange = cartItem[i].querySelector('input')
+      // console.log(productT)
+      valueChange.addEventListener("change", function() {
+         cartTotal()
+      })
+   }
 }
